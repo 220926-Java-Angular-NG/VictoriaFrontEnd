@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Application</title>
+    <style>
+        /* add css */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            text-align: center;
+            background-color: beige;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+
+
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>New Team Application</h1>
+    <br>
+    <div id="main">
+        <form>
+            <input type="text" id="full-name" placeholder="Add Your Full Name">
+            <select id="teams">
+                <option value="default">Choose Your New Team</option>
+                <option value="cookie-cutters">Cookie Cutters</option>
+                <option value="code-crackers">Code Crackers</option>
+                <option value="java-lovers">Java Lovers</option>
+              </select>
+            <button id="submit-button">Submit</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="column" id="cookie-cutters">
+          <h2><img src="./cookie-cutters.jpg">Cookie Cutters</h2>
+          <br>
+        </div>
+        
+        <div class="column" id="code-crackers">
+          <h2><img src="./code-crackers.jpg">Code Crackers</h2>
+          <br>
+        </div>
+        
+        <div class="column" id="java-lovers">
+          <h2><img src="./java-lovers.jpg">Java Lovers</h2>
+          <br>
+        </div>
+      </div>
+    <script src="./input-assignment.js"></script>
+</body>
+</html>
